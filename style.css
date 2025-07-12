@@ -14,6 +14,7 @@ body {
 }
 .wrapper {
   min-height: 100%;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -158,4 +159,41 @@ h4 {
   margin-bottom: 10px;
   color: #fff;
   text-decoration: none;
+}
+.arrow-down {
+  position: fixed;
+  margin: 30px;
+  bottom: 2rem;
+  right: 2rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.arrow-down span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #f08446;
+  border-right: 5px solid #f08446;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
