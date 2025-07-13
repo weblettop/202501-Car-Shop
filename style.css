@@ -69,6 +69,9 @@ article {
   border-radius: 10px;
   margin-bottom: 40px;
 }
+#bmw {
+  margin-bottom: 0;
+}
 p {
   text-indent: 1%;
   padding: 20px;
@@ -174,8 +177,8 @@ h4 {
   height: 30px;
   border-bottom: 5px solid #f08446;
   border-right: 5px solid #f08446;
-  transform: rotate(45deg);
-  margin: -16px;
+  transform: rotate(-135deg);
+  margin: 2px;
   animation: arrow-down 2s infinite;
 }
 .arrow-down span:nth-child(2) {
@@ -187,13 +190,127 @@ h4 {
 @keyframes arrow-down {
   0% {
     opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(-135deg) translate(-20px, -20px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(-135deg) translate(20px, 20px);
   }
+}
+
+.wrapper-table {
+  margin: 0 auto 50px;
+}
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+tr,
+th,
+td {
+  border: 4px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid #ccc;
+  /* width: 50%; */
+}
+form section {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #f08446;
+}
+.info,
+.contacts,
+.car-info {
+  position: relative;
+}
+form section .title {
+  position: absolute;
+  top: -17px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #696666;
+  width: 120px;
+}
+.contacts .title,
+.car-info .title {
+  width: 85px;
+}
+form section div {
+  width: 30rem;
+}
+form label {
+  width: 10rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.gen {
+  border: 3px solid #ccc;
+  position: relative;
+  padding: 5px 5px 0px;
+  margin-bottom: 10px;
+}
+.gen-title {
+  position: absolute;
+  top: -17px;
+  left: 2rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #696666;
+  width: 75px;
+}
+.gen label {
+  width: 40px;
+  margin-right: 20px;
+}
+.gen input {
+  margin-right: 25px;
+}
+.car-info input {
+  margin-right: 0;
+}
+.car-info input[type='range'] {
+  width: 100%;
+  accent-color: #f08446;
+}
+input {
+  accent-color: #f08446;
+}
+#model-toyota,
+#model-bmw{
+  display: none;
+}
+.btn {
+  width: 10rem;
+  margin-left: 1.2rem;
+  background-color: #f08446;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #696666;
+}
+
+.btn:hover {
+  background-color: #696666;
+  transition: background-color 0.3s ease;
+  color: #f08446;
+  border: 2px solid #f08446;
 }
