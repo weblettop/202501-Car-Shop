@@ -76,7 +76,7 @@ p {
   text-indent: 1%;
   padding: 20px;
 }
-.car_header {
+.car-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,12 +86,12 @@ p {
   margin-bottom: 40px;
   border-radius: 10px;
 }
-.car_header img {
+.car-header img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.car_header h2 {
+.car-header h2 {
   font-size: 28px;
   color: #afadad;
   margin: 0 auto;
@@ -103,31 +103,31 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.car .car_item {
+.car .car-item {
   width: 45%;
 }
-.car_item img {
+.car-item img {
   width: 100%;
   height: auto;
 }
 
-.car_review {
+.car-review {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
-.car_revier-item {
+.car-revier-item {
   flex: 1 1 calc(33.333% - 20px);
   flex-direction: row;
   display: flex;
-  align-items: space-between;
+ 
   border-top: 1px solid rgb(187, 177, 177);
 
   padding: 20px;
 }
 
-.car_revier-item img {
+.car-evier-item img {
   width: 150px;
   height: 150px;
   border-radius: 20%;
@@ -150,14 +150,14 @@ h4 {
   align-items: center;
   gap: 10px 20px;
 }
-.footer_col {
+.footer-col {
   flex: 1;
   padding: 10px;
   /* text-align: center; */
   background-color: #696666;
   min-height: 150px;
 }
-.footer_col a {
+.footer-col a {
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
@@ -203,6 +203,10 @@ h4 {
 
 .wrapper-table {
   margin: 0 auto 50px;
+ 
+}
+.wrapper-table table{
+   border: 4px solid #ccc;
 }
 caption {
   font-size: 24px;
@@ -212,105 +216,8 @@ caption {
 tr,
 th,
 td {
-  border: 4px solid #ccc;
+  border: 2px solid #ccc;
   padding: 10px;
   text-align: center;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border: 3px solid #ccc;
-  /* width: 50%; */
-}
-form section {
-  display: flex;
-  flex-direction: column;
-  /* width: 100%; */
-
-  margin: 20px;
-  padding: 20px;
-  border: 3px solid #f08446;
-}
-.info,
-.contacts,
-.car-info {
-  position: relative;
-}
-form section .title {
-  position: absolute;
-  top: -17px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #696666;
-  width: 120px;
-}
-.contacts .title,
-.car-info .title {
-  width: 85px;
-}
-form section div {
-  width: 30rem;
-}
-form label {
-  width: 10rem;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-.gen {
-  border: 3px solid #ccc;
-  position: relative;
-  padding: 5px 5px 0px;
-  margin-bottom: 10px;
-}
-.gen-title {
-  position: absolute;
-  top: -17px;
-  left: 2rem;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #696666;
-  width: 75px;
-}
-.gen label {
-  width: 40px;
-  margin-right: 20px;
-}
-.gen input {
-  margin-right: 25px;
-}
-.car-info input {
-  margin-right: 0;
-}
-.car-info input[type='range'] {
-  width: 100%;
-  accent-color: #f08446;
-}
-input {
-  accent-color: #f08446;
-}
-#model-toyota,
-#model-bmw{
-  display: none;
-}
-.btn {
-  width: 10rem;
-  margin-left: 1.2rem;
-  background-color: #f08446;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  border: 2px solid #696666;
-}
-
-.btn:hover {
-  background-color: #696666;
-  transition: background-color 0.3s ease;
-  color: #f08446;
-  border: 2px solid #f08446;
+  
 }

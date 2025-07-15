@@ -8,11 +8,13 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/form.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header id="#header" class="header">
+      <header class="header">
         <nav class="navbar">
           <a href="index.html#ford">Ford</a>
           <a href="index.html#toyota">Toyota</a>
@@ -26,9 +28,9 @@
       </header>
       <main class="main">
         <article class="form">
-          <form action="#" method="post" class="feedback-form">
-            <section class="info">
-              <div class="title">Personal info</div>
+          <form class="feedback-form">
+            <fieldset class="section info">
+              <legend class="title">Personal info</legend>
               <div>
                 <label for="name">First Name</label>
                 <input type="text" id="name" name="name" required />
@@ -53,7 +55,7 @@
                   <input
                     type="radio"
                     id="gender-male"
-                    name="gender-male"
+                    name="gender-client"
                     required
                   />
 
@@ -61,7 +63,7 @@
                   <input
                     type="radio"
                     id="gender-remale"
-                    name="gender-remale"
+                    name="gender-client"
                     required
                   />
                 </div>
@@ -75,10 +77,10 @@
                   <option value="3">10 years and more</option>
                 </select>
               </div>
-            </section>
+            </fieldset>
 
-            <section class="contacts">
-              <div class="title">Contacts</div>
+            <fieldset class="section contacts">
+              <legend class="title">Contacts</legend>
 
               <div>
                 <label for="email">Email:</label>
@@ -97,9 +99,9 @@
                   required
                 ></textarea>
               </div>
-            </section>
-            <section class="car-info">
-              <div class="title">Car info</div>
+            </fieldset>
+            <fieldset class="section car-info">
+              <legend class="title">Car info</legend>
               <div>
                 <label for="brand">Brand</label>
                 <select id="brand" name="brand">
@@ -116,10 +118,12 @@
                 </select>
                 <select id="model-toyota" name="model">
                   <option value="corolla">Toyota Corolla</option>
-                  <option value="crown">Toyota Crown</option> </select>
+                  <option value="crown">Toyota Crown</option>
+                </select>
                 <select id="model-bmw" name="model">
                   <option value="sedan">BMW M3 Sedan</option>
-                  <option value="cabrio">BMW 8 Series Cabrio</option></select>
+                  <option value="cabrio">BMW 8 Series Cabrio</option>
+                </select>
               </div>
               <div>
                 <label for="used">Used</label>
@@ -130,16 +134,16 @@
                 <div class="gen">
                   <div class="gen-title">Color</div>
                   <div>
-                    <input type="radio" id="red" name="red" required />
+                    <input type="radio" id="red" name="color-car" required />
                     <label for="red">Red</label>
 
-                    <input type="radio" id="black" name="black" required />
+                    <input type="radio" id="black" name="color-car" required />
                     <label for="black">Black</label>
-                    <input type="radio" id="blue" name="blue" required />
+                    <input type="radio" id="blue" name="color-car" required />
                     <label for="blue">Blue</label>
-                    <input type="radio" id="white" name="white" required />
+                    <input type="radio" id="white" name="color-car" required />
                     <label for="white">White</label>
-                    <input type="radio" id="grey" name="grey" required />
+                    <input type="radio" id="grey" name="color-car" required />
                     <label for="grey">Grey</label>
                   </div>
                 </div>
@@ -154,10 +158,11 @@
                   value="20"
                 />
               </div>
-            </section>
+              
+            </fieldset>
 
-            <button type="submit" class="btn">Cansel</button>
-            <button type="submit" class="btn">Ok</button>
+            <button type="button" class="btn">Cansel</button>
+            <button type="button" class="btn">Ok</button>
           </form>
         </article>
       </main>
@@ -169,18 +174,18 @@
       </a>
 
       <footer class="footer">
-        <div class="footer_col">
+        <div class="footer-col">
           You may also want to visit us:<br />
           Mozilla Foundation<br />
           331 E Evelyn Ave<br />
           Mountain View, CA 94041<br />
           USA
         </div>
-        <div class="footer_col">
+        <div class="footer-col">
           <a href="mailto:jim@example.com">jim@example.com</a><br />
           <a href="tel:+380675550132">+38 (067) 555‑0132</a>
         </div>
-        <div class="footer_col">
+        <div class="footer-col">
           You can contact at <br /><a href="#">www.shop.com</a>
         </div>
       </footer>
